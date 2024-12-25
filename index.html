@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Personal portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Styles.css"/>
+    </head>
+    
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="About.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="home">
+            <h1>Welcome to my portfolio!</h1>
+            <p>I am recent Software development graduate with strong passion for Cybersecurity. I am excited to apply my skills and knowledge to real-world problems and contributes to the cybersecurity community.</p>
+        </section>
+        
+        <section id="projects">
+            <h2>My projects</h2>
+            <div class="project-grid">
+                <div class="projects">
+                    <h1>Honeypot-setup</h1>
+                    <p>This system sets up a honeypot system that stimulates a vulnerable sever and FTP services to detect and capture malicious activity .The system listens for incoming connection,handle incoming traffic and send fake responses </p>
+                    
+                    <h1>2FA-System</h1>
+                    <p>A java-based system that provide secure authentication for users using a two-factor authentication mechanism</p>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact-form">
+            <h2>Get in touch</h2>
+            <form action="contact.php" method="post">
+               <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br><!-- comment -->
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                
+                <label for="message">Message</label>
+                <textarea id="message" naeme="message"></textarea><br><br><!-- comment -->
+                
+                <input type="submit" value="send">
+            </form>
+        </section>
+        <script src="Main.js"></script>   
+    </body>
+</html>
